@@ -16,7 +16,11 @@ layout: default
     {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date: "%B %d, %Y" }}">{% endif %}
 
     <section class="page__content" itemprop="text">
-      {{ content }}
+      {% for post in paginator.posts %}
+        {% include archive-single.html %}
+      {% endfor %}
+
+      {% include paginator.html %}
     </section>
   </article>
 </div>

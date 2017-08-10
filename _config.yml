@@ -9,7 +9,7 @@
 locale                   : "en"
 title                    : "Standigm"
 title_separator          : "-"
-name                     : "Stanley"
+name                     : "Standigm"
 description              : "I'm an amazing robot."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -57,7 +57,7 @@ yandex_site_verification :
 twitter:
   username               :
 facebook:
-  username               :
+  username               : "standigm"
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
@@ -240,7 +240,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: # true
       share: true

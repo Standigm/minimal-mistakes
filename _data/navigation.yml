@@ -1,7 +1,5 @@
 # main links
 main:
-  - title: "HOME"
-    url: /#/
   - title: "PROBLEM"
     url: /problem/
   - title: "SOLUTION"

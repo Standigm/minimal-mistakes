@@ -169,6 +169,11 @@
       text-shadow: 1px 1px 4px rgba(#000, 0.5);
     }
 
+    .page__subtitle {
+      max-width: $medium;
+      font-size: $type-size-4;
+    }
+
     .page__lead {
       max-width: $medium;
     }

@@ -33,7 +33,6 @@
 
     a {
       text-decoration: none;
-      font-size: $type-size-7;
     }
   }
 }
@@ -80,5 +79,9 @@
   &--lg {
     padding-right: 2em;
     font-weight: 700;
+  }
+
+  a {
+    font-size: $type-size-7;
   }
 }

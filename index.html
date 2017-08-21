@@ -6,6 +6,19 @@ date: 2018-08-10T14:18:41-04:00
 header:
   overlay_image: /assets/images/banner.jpg
 excerpt: "Standigm discovers drugs using AI, saving time and cost when compared to traditional methods. Our AI reveals the patterns hiding in the today’s biomedical data that will lead to tomorrow’s medicines."
+feature_row:
+  - image_path: /assets/images/tech_1.png
+    alt: "ACTIVE DATA PARSING"
+    title: "ACTIVE</br>DATA PARSING"
+    excerpt: "Standigm recognizes that the biomedical data are neither clean nor simple; we ingest various databases, established biological models, published texts, and other sources into a comprehensive corpus of information. We then do the heavy lifting of parsing the dataset to make it actionable."
+  - image_path: /assets/images/tech_2.png
+    alt: "AI MODELING"
+    title: "AI MODELING"
+    excerpt: "Once we have the dataset organized, we run it through our artificial intelligence system. Our AI automatically analyzes the innumerable ways the data can be combined and configured to create weight-optimized, deep learning models based on rules hidden in the data. Not only does our AI generate models, but it also provides an explanation of how these models were generated, offering necessary insight for researchers."
+  - image_path: /assets/images/tech_3.png
+    alt: "BIOLOGICAL INTERPRETATION"
+    title: "BIOLOGICAL</br>INTERPRETATION"
+    excerpt: "From these AI models, we then provide biological interpretations of how the implicated drug compounds would interact with people in the real world. This information is crucial to effectively decide which drugs to assemble and test, leading to viable solutions from the promising candidates."
 ---
 
 <!-- The Problem -->
@@ -57,50 +70,7 @@ Standigm cuts through the noise and presents data that are most pertinent to the
 	</div>
 </div>
 
-<!-- Technology -->
-<div class="box" id="technology">
-	<div class="title">
-	TECHNOLOGY
-	</div>
-	<div class="row row-eq-height">
-		<div class="col-sm-4">
-			<div class="mark">
-				<img src="/assets/images/tech_1.png">
-				<div class="content">
-					ACTIVE DATA<br />PARSING
-				</div>
-			</div>
-			<div class="desc">
-Standigm recognizes that the biomedical data are neither clean nor simple; we ingest various databases, established biological models, published texts, and other sources into a comprehensive corpus of information. We then do the heavy lifting of parsing the dataset to make it actionable.
-			</div>
 
-			<div class="bg_div"></div>
-		</div>
-		<div class="col-sm-4">
-			<div class="mark">
-				<img src="/assets/images/tech_2.png">
-				<div class="content">
-					AI MODELING<br />&nbsp;
-				</div>
-			</div>
-			<div class="desc">
-Once we have the dataset organized, we run it through our artificial intelligence system. Our AI automatically analyzes the innumerable ways the data can be combined and configured to create weight-optimized, deep learning models based on rules hidden in the data. Not only does our AI generate models, but it also provides an explanation of how these models were generated, offering necessary insight for researchers.
-			</div>
+{% include feature_row id="intro" type="center" %}
 
-			<div class="bg_div"></div>
-		</div>
-		<div class="col-sm-4">
-			<div class="mark">
-				<img src="/assets/images/tech_3.png">
-				<div class="content">
-					BIOLOGICAL<br />INTERPRETATION
-				</div>
-			</div>
-			<div class="desc">
-From these AI models, we then provide biological interpretations of how the implicated drug compounds would interact with people in the real world. This information is crucial to effectively decide which drugs to assemble and test, leading to viable solutions from the promising candidates.
-			</div>
-
-			<div class="bg_div"></div>
-		</div>
-	</div>
-</div>
+{% include feature_row %}

@@ -6,7 +6,8 @@ excerpt: "Standigm discovers drugs using AI, saving time and cost when compared 
 tags: [AI drug]
 header:
   overlay_image: /assets/images/banner.jpg
-feature_row:
+  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+tech_row:
   - image_path: /assets/images/tech_1.png
     alt: "ACTIVE DATA PARSING"
     title: "ACTIVE</br>DATA PARSING"
@@ -19,28 +20,13 @@ feature_row:
     alt: "BIOLOGICAL INTERPRETATION"
     title: "BIOLOGICAL</br>INTERPRETATION"
     excerpt: "From these AI models, we then provide biological interpretations of how the implicated drug compounds would interact with people in the real world. This information is crucial to effectively decide which drugs to assemble and test, leading to viable solutions from the promising candidates."
+intro:
+  - image_path: /assets/images/drug_discovery_process.jpg
+    excerpt: "<p>Drugs can take a decade of research and over a billion dollars' worth of development before they reach the market. Resources are wasted in the pre-discovery phase through a trial and error process that yields more error than success.</p>
+    <p>There are hidden insights in biomedical data, waiting to be discovered and to lead towards promising drug candidates.</p>
+    <p>Unfortunately, these patterns are too complex and diffuse to be detected by the human mind; this is where a more powerful solution comes in – Standigm’s latest artificial intelligence technologies.</p>"
 ---
 
-<!-- The Problem -->
-<div class="box" id="problem">
-	<div class="title">
-		THE<br />PROBLEM
-	</div>
-	<div class="content">
-		<p>
-			Drugs can take a decade of research and over a billion dollars' worth of development before they reach the market. Resources are wasted in the pre-discovery phase through a trial and error process that yields more error than success.
-		</p>
-		<p>
-			There are hidden insights in biomedical data, waiting to be discovered and to lead towards promising drug candidates.
-		</p>
-		<p>
-			Unfortunately, these patterns are too complex and diffuse to be detected by the human mind; this is where a more powerful solution comes in – Standigm’s latest artificial intelligence technologies.
-		</p>
-		<p>
-			<img src="/assets/images/drug_discovery_process.jpg" style="width: 85%;"/>
-		</p>
-	</div>
-</div>
 
 <!-- The Solution -->
 <div class="box" id="solution">
@@ -71,8 +57,8 @@ Standigm cuts through the noise and presents data that are most pertinent to the
 </div>
 
 
-{% include feature_row id="intro" type="center" %}
+{% include tech_row id="intro" type="center" %}
 
-{% include feature_row %}
+{% include tech_row %}
 
 {% include toc icon="gears" title="Table of Contents" %}

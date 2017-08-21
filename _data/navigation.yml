@@ -1,11 +1,11 @@
 # main links
 main:
   - title: "PROBLEM"
-    url: /problem/
+    url: /#problem
   - title: "SOLUTION"
-    url: /solution/
+    url: /#solution
   - title: "TECHNOLOGY"
-    url: /technology/
+    url: /#technology
   - title: "NEWS"
     url: /news/
   - title: "TEAM"

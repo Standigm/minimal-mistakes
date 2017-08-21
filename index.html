@@ -1,5 +1,5 @@
 ---
-layout: news
+layout: default
 title: "Standigm"
 subtitle: "THE CURE FOR PROTRACTED<br/>PHARMACEUTICAL DEVELOPMENT"
 excerpt: "Standigm discovers drugs using AI, saving time and cost when compared to traditional methods. Our AI reveals the patterns hiding in the today’s biomedical data that will lead to tomorrow’s medicines."
@@ -7,19 +7,13 @@ tags: [AI drug]
 header:
   overlay_image: /assets/images/banner.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
-problem:
-  - title: "PROBLEM"
-    image_path: /assets/images/drug_discovery_process.jpg
-    excerpt: "<p>Drugs can take a decade of research and over a billion dollars' worth of development before they reach the market. Resources are wasted in the pre-discovery phase through a trial and error process that yields more error than success.</p>
-    <p>There are hidden insights in biomedical data, waiting to be discovered and to lead towards promising drug candidates.</p>
-    <p>Unfortunately, these patterns are too complex and diffuse to be detected by the human mind; this is where a more powerful solution comes in – Standigm’s latest artificial intelligence technologies.</p>"
 solution:
   - title: "THE SOLUTION"
     image_path: /assets/images/the_solution.png
     excerpt: "<p>Standigm removes the traditional guesswork from data analysis by using our innovative AI, automatically examining whole biomedical databases to learn what is hiding just out of sight.</p>
     <p>By applying our state-of-the-art machine learning technology to real data, we eliminate some of the uncertainty in the drug discovery process; instead of fishing in the dark for effective treatments, we can focus on developing candidates that are primed for success.</p>
     <p>Standigm cuts through the noise and presents data that are most pertinent to the treatment of diseases, saving time and money by shortening the development cycle.</p>"
-tech_row:
+feature_row:
   - image_path: /assets/images/tech_1.png
     alt: "ACTIVE DATA PARSING"
     title: "ACTIVE</br>DATA PARSING"
@@ -34,10 +28,40 @@ tech_row:
     excerpt: "From these AI models, we then provide biological interpretations of how the implicated drug compounds would interact with people in the real world. This information is crucial to effectively decide which drugs to assemble and test, leading to viable solutions from the promising candidates."
 ---
 
-{% include tech_row id="problem" type="left" %}
+{% include page__hero.html %}
+<div id="main" role="main">
+  <div class="archive">
+    {% include recent_news %}
+  </div>
+</div>
 
-{% include tech_row id="solution" type="left" %}
+<div id="main" role="main">
+    <!-- Problem -->
+    <div class="archive__item">
+        <h2 id="problem" class="archive__item-title">THE<br/>PROBLEM</h2>
+        <div class="archive__item-body">
+            <p>Drugs can take a decade of research and over a billion dollars' worth of development before they reach the market. Resources are wasted in the pre-discovery phase through a trial and error process that yields more error than success.</p>
+            <p>There are hidden insights in biomedical data, waiting to be discovered and to lead towards promising drug candidates.</p>
+            <p>Unfortunately, these patterns are too complex and diffuse to be detected by the human mind; this is where a more powerful solution comes in – Standigm’s latest artificial intelligence technologies.</p>
+        </div>
+        <div class="archive__item-body">
+            <img src="{{ '/assets/images/drug_discovery_process.jpg' | absolute_url }}">
+        </div>
+    </div>
+    <!-- Solution -->
+    <div class="archive__item">
+        <h2 id="solution" class="archive__item-title">SOLUTION</h2>
+        <div class="archive__item-teaser">
+            <img src="{{ '/assets/images/the_solution.png' | absolute_url }}">
+        </div>
+        <div class="archive__item-body">
+            <p>Standigm removes the traditional guesswork from data analysis by using our innovative AI, automatically examining whole biomedical databases to learn what is hiding just out of sight.</p>
+            <p>By applying our state-of-the-art machine learning technology to real data, we eliminate some of the uncertainty in the drug discovery process; instead of fishing in the dark for effective treatments, we can focus on developing candidates that are primed for success.</p>
+            <p>Standigm cuts through the noise and presents data that are most pertinent to the treatment of diseases, saving time and money by shortening the development cycle.</p>
+        </div>
+    </div>
 
-{% include tech_row %}
+    <!-- Technology -->
+    {% include feature_row %}
 
-{% include toc icon="gears" title="Table of Contents" %}
+</div>

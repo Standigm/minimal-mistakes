@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: splash
 title: "Contact"
 header:
   overlay_image: /assets/images/banner.jpg

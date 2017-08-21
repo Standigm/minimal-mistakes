@@ -78,10 +78,10 @@ analytics:
 # Site Author
 author:
   name             : "Standigm"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/stan_inverted_505px.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : ""
   location         : ""
-  email            :
+  email            : "business@standigm.com"
   uri              :
   bitbucket        :
   codepen          :

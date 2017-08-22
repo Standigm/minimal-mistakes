@@ -10,7 +10,7 @@ locale                   : "en"
 title                    : "Standigm"
 title_separator          : "-"
 name                     : "Standigm"
-description              : "I'm an amazing robot."
+description              : 
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -77,7 +77,7 @@ analytics:
 
 # Site Author
 author:
-  name             : 
+  name             : "Standigm"
   avatar           : "/assets/images/stan_inverted_505px.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : 
   location         : 
@@ -87,7 +87,7 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "standigm"
   foursquare       :
   github           :
   gitlab           :
@@ -95,7 +95,7 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         :
+  linkedin         : "standigm"
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)

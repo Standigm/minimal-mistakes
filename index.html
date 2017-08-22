@@ -3,65 +3,200 @@ layout: default
 title: "Standigm"
 subtitle: "THE CURE FOR PROTRACTED<br/>PHARMACEUTICAL DEVELOPMENT"
 excerpt: "Standigm discovers drugs using AI, saving time and cost when compared to traditional methods. Our AI reveals the patterns hiding in the today’s biomedical data that will lead to tomorrow’s medicines."
-tags: [AI drug]
 header:
   overlay_image: /assets/images/banner.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
-solution:
-  - title: "THE SOLUTION"
-    image_path: /assets/images/the_solution.png
-    excerpt: "<p>Standigm removes the traditional guesswork from data analysis by using our innovative AI, automatically examining whole biomedical databases to learn what is hiding just out of sight.</p>
-    <p>By applying our state-of-the-art machine learning technology to real data, we eliminate some of the uncertainty in the drug discovery process; instead of fishing in the dark for effective treatments, we can focus on developing candidates that are primed for success.</p>
-    <p>Standigm cuts through the noise and presents data that are most pertinent to the treatment of diseases, saving time and money by shortening the development cycle.</p>"
-feature_row:
-  - image_path: /assets/images/tech_1.png
-    alt: "ACTIVE DATA PARSING"
-    title: "ACTIVE</br>DATA PARSING"
-    excerpt: "Standigm recognizes that the biomedical data are neither clean nor simple; we ingest various databases, established biological models, published texts, and other sources into a comprehensive corpus of information. We then do the heavy lifting of parsing the dataset to make it actionable."
-  - image_path: /assets/images/tech_2.png
-    alt: "AI MODELING"
-    title: "AI MODELING"
-    excerpt: "Once we have the dataset organized, we run it through our artificial intelligence system. Our AI automatically analyzes the innumerable ways the data can be combined and configured to create weight-optimized, deep learning models based on rules hidden in the data. Not only does our AI generate models, but it also provides an explanation of how these models were generated, offering necessary insight for researchers."
-  - image_path: /assets/images/tech_3.png
-    alt: "BIOLOGICAL INTERPRETATION"
-    title: "BIOLOGICAL</br>INTERPRETATION"
-    excerpt: "From these AI models, we then provide biological interpretations of how the implicated drug compounds would interact with people in the real world. This information is crucial to effectively decide which drugs to assemble and test, leading to viable solutions from the promising candidates."
 ---
 
 {% include page__hero.html %}
-<div id="main" role="main">
-  <div class="archive">
-    {% include recent_news %}
-  </div>
+
+<div class="box" id="news">
+    <div class="title">
+        RECENT NEWS
+    </div>
+    {% for post in paginator.posts %}
+      {% include archive-single.html %}
+    {% endfor %}
 </div>
 
-<div id="main" role="main">
-    <!-- Problem -->
-    <div class="archive__item">
-        <h2 id="problem" class="archive__item-title">THE<br/>PROBLEM</h2>
-        <div class="archive__item-body">
-            <p>Drugs can take a decade of research and over a billion dollars' worth of development before they reach the market. Resources are wasted in the pre-discovery phase through a trial and error process that yields more error than success.</p>
-            <p>There are hidden insights in biomedical data, waiting to be discovered and to lead towards promising drug candidates.</p>
-            <p>Unfortunately, these patterns are too complex and diffuse to be detected by the human mind; this is where a more powerful solution comes in – Standigm’s latest artificial intelligence technologies.</p>
+<!-- The Problem -->
+<div class="box" id="problem">
+    <div class="title">
+        THE<br />PROBLEM
+    </div>
+    <div class="content">
+        <p>
+            Drugs can take a decade of research and over a billion dollars' worth of development before they reach the market. Resources are wasted in the pre-discovery phase through a trial and error process that yields more error than success.
+        </p>
+        <p>
+            There are hidden insights in biomedical data, waiting to be discovered and to lead towards promising drug candidates.
+        </p>
+        <p>
+            Unfortunately, these patterns are too complex and diffuse to be detected by the human mind; this is where a more powerful solution comes in – Standigm’s latest artificial intelligence technologies.
+        </p>
+        <p>
+            <img src="/assets/images/drug_discovery_process.jpg" style="width: 85%;"/>
+        </p>
+    </div>
+</div>
+
+<!-- The Solution -->
+<div class="box" id="solution">
+    <div class="row">
+        <div class="col-sm-3" style="max-height: 500px">
+            <img src="/assets/images/the_solution.png" style="width: 100%; max-width: 300px;" />
         </div>
-        <div class="archive__item-body">
-            <img src="{{ '/assets/images/drug_discovery_process.jpg' | absolute_url }}">
+        <div class="col-sm-9 col-xs-12">
+            <div class="title">
+                THE<br />SOLUTION
+            </div>
+        </div>
+
+        <div class="col-sm-9">
+            <div class="content">
+<p>
+Standigm removes the traditional guesswork from data analysis by using our innovative AI, automatically examining whole biomedical databases to learn what is hiding just out of sight.
+</p>
+<p>
+By applying our state-of-the-art machine learning technology to real data, we eliminate some of the uncertainty in the drug discovery process; instead of fishing in the dark for effective treatments, we can focus on developing candidates that are primed for success.
+</p>
+<p>
+Standigm cuts through the noise and presents data that are most pertinent to the treatment of diseases, saving time and money by shortening the development cycle.
+</p>
+            </div>
         </div>
     </div>
-    <!-- Solution -->
-    <div class="archive__item">
-        <h2 id="solution" class="archive__item-title">SOLUTION</h2>
-        <div class="archive__item-teaser">
-            <img src="{{ '/assets/images/the_solution.png' | absolute_url }}">
+</div>
+
+<!-- Technology -->
+<div class="box" id="technology">
+    <div class="title">
+    TECHNOLOGY
+    </div>
+    <div class="row row-eq-height">
+        <div class="col-sm-4">
+            <div class="mark">
+                <img src="/assets/images/tech_1.png">
+                <div class="content">
+                    ACTIVE DATA<br />PARSING
+                </div>
+            </div>
+            <div class="desc">
+Standigm recognizes that the biomedical data are neither clean nor simple; we ingest various databases, established biological models, published texts, and other sources into a comprehensive corpus of information. We then do the heavy lifting of parsing the dataset to make it actionable.
+            </div>
+
+            <div class="bg_div"></div>
         </div>
-        <div class="archive__item-body">
-            <p>Standigm removes the traditional guesswork from data analysis by using our innovative AI, automatically examining whole biomedical databases to learn what is hiding just out of sight.</p>
-            <p>By applying our state-of-the-art machine learning technology to real data, we eliminate some of the uncertainty in the drug discovery process; instead of fishing in the dark for effective treatments, we can focus on developing candidates that are primed for success.</p>
-            <p>Standigm cuts through the noise and presents data that are most pertinent to the treatment of diseases, saving time and money by shortening the development cycle.</p>
+        <div class="col-sm-4">
+            <div class="mark">
+                <img src="/assets/images/tech_2.png">
+                <div class="content">
+                    AI MODELING<br />&nbsp;
+                </div>
+            </div>
+            <div class="desc">
+Once we have the dataset organized, we run it through our artificial intelligence system. Our AI automatically analyzes the innumerable ways the data can be combined and configured to create weight-optimized, deep learning models based on rules hidden in the data. Not only does our AI generate models, but it also provides an explanation of how these models were generated, offering necessary insight for researchers.
+            </div>
+
+            <div class="bg_div"></div>
+        </div>
+        <div class="col-sm-4">
+            <div class="mark">
+                <img src="/assets/images/tech_3.png">
+                <div class="content">
+                    BIOLOGICAL<br />INTERPRETATION
+                </div>
+            </div>
+            <div class="desc">
+From these AI models, we then provide biological interpretations of how the implicated drug compounds would interact with people in the real world. This information is crucial to effectively decide which drugs to assemble and test, leading to viable solutions from the promising candidates.
+            </div>
+
+            <div class="bg_div"></div>
         </div>
     </div>
+</div>
 
-    <!-- Technology -->
-    {% include feature_row %}
+<!-- Project -->
+<div class="box" id="project">
 
+    <div class="sub-title">
+    PROJECT
+    </div>
+
+    <div class="row">
+
+        <div class="col-xs-12 col-sm-6">
+            <div class="mark">
+              <img class="poster" src="/assets/images/poster/p1_thumb.jpg" alt="Standigm Poster1">
+                <a href="technology/Standigm_P1_AZ_challenge.pdf">
+                    <img class="pdf-icon" src="/assets/images/pdf_icon.svg" />
+                </a>
+            </div>
+            <div class="desc">
+                <div class="poster-title">Project 1:  Predicting synergetic drug combinations</div>
+                <div class="summary">
+                    The goal of the project is to predict synergetic drug combinations that
+                    effectively kill cancer cells. The disease context, the characteristics of drugs,
+                    and the interaction between drugs and diseases are described using various chemical
+                    properties of drugs, target proteins/signaling pathways of drugs, monotherapy drug
+                    response data and genomic data for cell lines, among others. Based on these data,
+                    we designed three types of input features (cell line-specific, drug-specific,
+                    and drug-cell line interaction features). With various combinations of these features
+                    and different learning parameters, we built an ensemble of gradient boosting classifiers,
+                    which ranked 3rd among 71 teams worldwide in "AstraZeneca-Sanger Drug Combination
+                    Prediction Dream Challenge (2015~2016)". The methods will be applied to precision
+                    medicine, patient stratification, and therapeutic/diagnostic design.
+                </div>
+                <div class="status">Status: Completed in May 2016</div>
+
+            </div>
+            <!-- <div class="bg_div"></div> -->
+      </div>
+
+        <div class="col-xs-12 col-sm-6">
+            <div class="mark">
+                <img class="poster" src="/assets/images/poster/p2_thumb.jpg" alt="Standigm Poster2">
+                <a href="technology/Standigm_P2_Learning_drug_perturbed_data.pdf">
+                    <img class="pdf-icon" src="/assets/images/pdf_icon.svg" />
+                </a>
+            </div>
+            <div class="desc">
+                <div class="poster-title">Project 2: Learning drug-perturbed data</div>
+                <div class="summary">
+                    The goal of the project is to predict new indications for existing drugs,
+                    called drug repositioning, from the features of drug responses and drug uses
+                    discovered via deep learning. Here, the drug responses and uses are described
+                    by the data of drug-perturbed gene expressions and of therapeutic usage labels,
+                    respectively. We have been developing various multimodal learning methods
+                    (XGBoost, Compact Bilinear Pooling, etc.) for robust feature learning.
+                    These models suggest 20 hits with new drug indications. For two of the 20 drug
+                    repositioning hits, literature has shown their experimental validations. For the
+                    remaining hits, Standigm is designing in-vivo and in-vitro experimental validations
+                    to demonstrate Standigm.AI’s prediction power. Our drug repositioning AI will discover
+                    hidden relational patterns of drugs and indications, ultimately saving the cost of drug
+                    development.
+                </div>
+                <div class="status">Status: Completed in January 2017</div>
+            </div>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6">
+            <div class="mark">
+                <img class="poster" src="/assets/images/poster/p3_thumb.jpg" alt="Standigm Poster3">
+                <a href="technology/Standigm_P3_Building_Learning_biological_knowledge.pdf">
+                    <img class="pdf-icon" src="/assets/images/pdf_icon.svg" />
+                </a>
+                <div class="content"></div>
+            </div>
+            <div class="desc">
+                <div class="poster-title" >Project 3: Building &amp; Learning biological knowledge</div>
+                <div class="summary">
+                    The goal of the project is to predict missing relationships between proteins, drugs, and diseases by learning from a biological knowledge GraphDB. We constructed the biological GraphDB consisting of nodes (32,373 proteins, 7815 drugs, 3721 diseases, etc.) and edges (55,618 drug-disease edges, 125,686 drug-protein edges, etc.) using knowledge from various open and private sources. Users can easily access and visualize the GraphDB via web browsers and navigate the DB using the Cypher query language. We are developing models to predict unknown links between the nodes (proteins, drugs, disease etc.) in the GraphDB. The models will be applied to finding new drug indications, new drug targets, and new disease biomarkers.
+                </div>
+                <div class="status">Status: In progress (January 2017)</div>
+            </div>
+        </div>
+
+    </div>
 </div>

@@ -20,7 +20,7 @@
           animation: $intro-transition;
   -webkit-animation-delay: 0.45s;
           animation-delay: 0.45s;
-  background-color: $lighter-gray;
+  background-color: $oxford-blue;
   border-top: 1px solid $light-gray;
 
   footer {
@@ -80,5 +80,12 @@
   a {
     padding-right: 10px;
     font-weight: bold;
+  }
+}
+
+.page__footer-links {
+  color: white; 
+  img {
+    height: 30px;
   }
 }

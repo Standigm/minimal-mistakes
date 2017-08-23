@@ -136,10 +136,14 @@
           animation-delay: 0.25s;
 
   &--overlay {
+    padding: 3em 0;
+
+    @include breakpoint($x-large) {
+      padding: 40em 0 5em 0;
+    }
+
     position: relative;
     margin-bottom: 2em;
-    /* padding: 3em 0; */
-    padding: 40em 0 5em 0;
     @include clearfix;
     background-size: cover;
     background-repeat: no-repeat;
@@ -148,6 +152,7 @@
             animation: $intro-transition;
     -webkit-animation-delay: 0.25s;
             animation-delay: 0.25s;
+
 
     a {
       color: #fff;

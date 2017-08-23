@@ -14,10 +14,11 @@ header:
     <div class="title">
         RECENT NEWS
     </div>
-    <div class="archive">
+    <div class='archive'>
         {% for post in paginator.posts %}
           {% include archive-single.html %}
         {% endfor %}
+        {% include paginator.html %}
     </div>
 </div>
 

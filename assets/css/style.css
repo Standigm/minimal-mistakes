@@ -16,6 +16,7 @@ html, body{
 	margin: 0px auto 100px auto;
 	width: 95%;
 	max-width: 1280px;
+	clear: both;
 }
 
 .box .title{
@@ -170,9 +171,11 @@ html, body{
 
 /* contact */
 #contact{
-
-	padding: 0 0 180px 0;
+	padding: 0 0 100px 0;
 }
+	#contact .row {
+		margin-bottom: 20px;
+	}
 	#contact .title{
 		width: 100%;
 		word-break: break-all;
@@ -202,6 +205,10 @@ html, body{
 	}
 	#contact .glyphicon {
 	    font-size: 19px;
+	}
+
+	#contact .map {
+		text-align: center;
 	}
 
 

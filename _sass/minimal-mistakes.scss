@@ -5,7 +5,7 @@
 */
 
 /* Variables */
-@import "minimal-mistakes/variables";
+@import "minimal-mistakes/stan_variables";
 
 /* Mixins and functions */
 @import "minimal-mistakes/vendor/breakpoint/breakpoint";
@@ -34,7 +34,13 @@
 @import "minimal-mistakes/utilities";
 
 /* Layout specific */
-@import "minimal-mistakes/page";
-@import "minimal-mistakes/archive";
+//@import "minimal-mistakes/page";
+//@import "minimal-mistakes/archive";
+
 @import "minimal-mistakes/sidebar";
 @import "minimal-mistakes/print";
+
+
+/* Standigm specific */
+@import "minimal-mistakes/stan_page";
+@import "minimal-mistakes/stan_archive";

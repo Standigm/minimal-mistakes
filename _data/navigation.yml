@@ -1,17 +1,15 @@
 # main links
 main:
-  - title: "PROBLEM"
-    url: /#problem
-  - title: "SOLUTION"
-    url: /#solution
-  - title: "TECHNOLOGY"
-    url: /#technology
-  - title: "NEWS"
-    url: /news/
+  - title: "HOME"
+    url: /
+  - title: "PROJECT"
+    url: /project/
   - title: "TEAM"
     url: /team/
   - title: "PARTNERSHIP"
     url: /partnership/
+  - title: "NEWS"
+    url: /news/
   - title: "CONTACT"
     url: /contact/
   - title: "JOB"

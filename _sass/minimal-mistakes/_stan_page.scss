@@ -178,11 +178,20 @@
 
     .page__subtitle {
       max-width: $medium;
-      font-size: $type-size-2;
+      font-size: $type-size-1;
+
+      @include breakpoint($x-large) {
+        font-size: 3em;
+      }
     }
 
     .page__lead {
       max-width: $medium;
+      font-size: $type-size-4;
+
+      @include breakpoint($x-large) {
+        font-size: $type-size-3;
+      }      
     }
 
     .page__title {

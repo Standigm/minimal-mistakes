@@ -1,0 +1,24 @@
+{% if include.id %}
+  {% assign event_row = page.[include.id] %}
+{% else %}
+  {% assign event_row = page.event_row %}
+{% endif %}
+
+{% assign posts = site.posts | where: "categories", "Event" %}
+
+<div class="event__wrapper">
+{% for post in posts  limit:3 %}
+  <div class="col-xs-12 col-sm-3">
+    <div class="mark">
+      <a href="{{ post.link_url | absolute_url }}">
+        <img src="{{ post.image_url | absolute_url }}">
+      </a>
+      <div class="content">{{ post.title }}</div>
+    </div>
+    <div class="desc">
+      Standigm will attend this event.
+    </div>
+  </div>
+{% endfor %}
+
+</div>

@@ -6,19 +6,32 @@
 
 {% assign posts = site.posts | where: "categories", "Event" %}
 
-<div class="event__wrapper">
-{% for post in posts  limit:3 %}
-  <div class="col-xs-12 col-sm-3">
-    <div class="mark">
-      <a href="{{ post.link_url | absolute_url }}">
-        <img src="{{ post.image_url | absolute_url }}">
-      </a>
-      <div class="content">{{ post.title }}</div>
-    </div>
-    <div class="desc">
-      Standigm will attend this event.
-    </div>
+<div class="event__wrapper box">
+{% for post in posts  limit:4 %}
+
+  <div class="event__item">
+      <div class="event__item-teaser">
+        <a href="{{ post.link_url | absolute_url }}">
+          {% if post.image_url %}
+            <img src="{{ post.image_url | absolute_url }}">
+          {% else %}
+            <h2 class="event__item-title">{{ post.title }}</h2>
+          {% endif %}
+        </a>
+      </div>
+      <div class="event__item-body">
+          <h4 class="date">
+              <i class="fa fa-calendar-check-o" aria-hidden="true"></i> {{ post.event_date }}
+          </h4>
+          <h4 class="location">
+              <i class="fa fa-map-marker" aria-hidden="true"></i> {{ post.event_location }}
+          </h4>
+          <div class="event__item-excerpt">
+              {{ post.excerpt }}
+          </div>
+      </div>
   </div>
+
 {% endfor %}
 
 </div>

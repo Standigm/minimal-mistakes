@@ -6,9 +6,7 @@
 
 {% assign posts = site.posts | where: "categories", "Event" %}
 
-<div class="event__wrapper box">
 {% for post in posts  limit:4 %}
-
   <div class="event__item">
       <div class="event__item-teaser">
         <a href="{{ post.link_url | absolute_url }}">
@@ -33,5 +31,3 @@
   </div>
 
 {% endfor %}
-
-</div>

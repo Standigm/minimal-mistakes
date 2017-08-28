@@ -26,7 +26,7 @@
 @import "minimal-mistakes/buttons";
 @import "minimal-mistakes/notices";
 @import "minimal-mistakes/masthead";
-@import "minimal-mistakes/navigation";
+//@import "minimal-mistakes/navigation";
 @import "minimal-mistakes/footer";
 @import "minimal-mistakes/syntax";
 
@@ -42,5 +42,6 @@
 
 
 /* Standigm specific */
+@import "minimal-mistakes/stan_navigation";
 @import "minimal-mistakes/stan_page";
 @import "minimal-mistakes/stan_archive";

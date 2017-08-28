@@ -327,11 +327,12 @@
 }
 
 .event__item {
+  width: span(10 of 12);
   margin-bottom: 2em;
   font-size: 1.25rem;
   border-radius: 10px;
   background-color: lightblue;
-  padding: 10px;
+  padding-top: 3px;
 
   .event__item-excerpt {
     font-size: 1.5rem;
@@ -342,10 +343,24 @@
     background-color: white;
     align-items: center;
     display: flex;
+    border-radius: 10px;
+    margin: 10px 10px 0px 10px;
+    height: 130px;
+    overflow: hidden;
+
   }
 
   .event__item-body {
     padding: 10px;
+
+    .date, .location, .event__item-excerpt {
+      margin : 4px ;
+      padding: 2px 10px;
+      background-color: honeydew;
+      border-radius: 3px;
+      font-weight: lighter;
+
+    }
   }
 
   @include breakpoint($small) {
@@ -373,11 +388,7 @@
       margin-left: gutter(of 12);
     }
 
-    .event__item-teaser {
-      max-height: 150px;
-      min-height: 150px;
-      overflow: hidden;
-    }
+
   }
 
   &--left {

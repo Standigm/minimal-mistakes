@@ -327,7 +327,7 @@
 }
 
 .event__item {
-  width: span(10 of 12);
+
   margin-bottom: 2em;
   font-size: 1.25rem;
   border-radius: 10px;
@@ -390,6 +390,10 @@
   }
 
   @include breakpoint($small) {
+    width: span(10 of 12);
+  }
+
+  @include breakpoint($medium) {
     float: left;
     margin-bottom: 0;
     width: span(3 of 12);

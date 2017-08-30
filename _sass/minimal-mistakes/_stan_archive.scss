@@ -325,7 +325,6 @@
   @include clearfix();
   margin-bottom: 2em;
   border-bottom: 1px solid $border-color;
-
 }
 
 .event__item {
@@ -333,7 +332,7 @@
   margin-bottom: 2em;
   font-size: 1.25rem;
   border-radius: 10px;
-  background-color: lightblue;
+  background-color: rgb(206,219,175);
   padding-top: 3px;
 
   &-excerpt {
@@ -402,21 +401,25 @@
     &:nth-child(4n+2) {
       clear: both;
       margin-left: 0;
+      #background-color: nth($event_color_list, 1);
     }
 
     &:nth-child(4n+3) {
       clear: none;
       margin-left: gutter(of 12);
+      #background-color: nth($event_color_list, 2);
     }
 
     &:nth-child(4n+4) {
       clear: none;
       margin-left: gutter(of 12);
+      #background-color: nth($event_color_list, 3);
     }
 
     &:nth-child(4n+1) {
       clear: none;
       margin-left: gutter(of 12);
+      #background-color: nth($event_color_list, 4);
     }
 
 

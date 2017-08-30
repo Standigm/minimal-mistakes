@@ -7,35 +7,55 @@ header:
   overlay_image: /assets/images/banner.jpg
   overlay_filter: rgba(100, 0, 50, 0.5)
   overlay_filter_to: rgba(255, 255, 255, 0.5)
+gallery:
+  - url: http://www.kcubeventures.co.kr
+    image_path: /assets/images/partnership/kcube_logo.png
+    alt: "KCube Ventures"
+  - url: http://lbinvestment.com
+    image_path: /assets/images/partnership/lbinvest_logo.png
+    alt: "LB Investment"
+  - url: http://www.atinuminvest.co.kr
+    image_path: /assets/images/partnership/atinum_logo.png
+    alt: "Atinum Invest"
+feature_row:
+  - image_path: /assets/images/partnership/cgx_logo.png
+    alt: "Crystal Genomics Logo"
+    title: "Crystal Genomics"
+    url: "http://www.crystalgenomics.com"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    target : "TEST"
+    stage : "TEST"
+    btn_label: "Read More"
+    btn_class: "btn--inverse"
+  - image_path: /assets/images/partnership/ajou_univ_mc.png
+    alt: "AJOU University Medical Center Logo"
+    title: "AJOU University Medical Center"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    target : "TEST"
+    stage : "TEST"
+    url: "http://www.ajoumc.or.kr"
+    btn_label: "Read More"
+    btn_class: "btn--inverse"
+  - image_path: /assets/images/partnership/amorepacific_logo_small.png
+    alt: "AmorePacific Logo"
+    title: "AmorePacific"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    target : "TEST"
+    stage : "TEST"
+    url: "http://www.amorepacific.com"
+    btn_label: "Read More"
+    btn_class: "btn--inverse"
 ---
 
 {% include stan_page__hero.html %}
 
 <!-- Partnership-->
 <div class="box" id="partnership">
-    <div class="sub-title">Investors</div>
-    <div class="content">
-            <a href="http://www.kcubeventures.co.kr/" alt="link to kcubeventures">
-                <img class="partnership_logo" src="/assets/images/partnership/kcube_logo.png" />
-            </a>
-            <a href="http://lbinvestment.com/" alt="link to LBinvestment">
-                <img class="partnership_logo" src="/assets/images/partnership/lbinvest_logo.png" />
-            </a>
-            <a href="http://www.atinuminvest.co.kr/" alt="link to atinum investment">
-                <img class="partnership_logo" src="/assets/images/partnership/atinum_logo.png" />
-            </a>
-    </div>
+
+    <div class="sub-title">Investors</div>    
+    {% include gallery %}
 
     <div class="sub-title">Collaborators</div>
-    <div class="content">
-        <a href="http://www.crystalgenomics.com/" alt="CrystalGenomics">
-            <img src="/assets/images/partnership/cgx_logo.png" class="partnership_logo" style="height:58px;"/>
-        </a>
-        <a href="http://www.ajoumc.or.kr/" alt="Ajou University Medical Center">
-            <img src="/assets/images/partnership/ajou_univ_mc.png" class="partnership_logo" style="height:80px;"/>
-        </a>
-        <a href="http://www.amorepacific.com/" alt="Amore Pacific">
-            <img src="/assets/images/partnership/amorepacific_logo_small.png" class="partnership_logo"/>
-        </a>
-    </div>
+    {% include stan_feature_row %}
+
 </div>

@@ -52,12 +52,18 @@
   }
 }
 
-.archive__item-excerpt {
-  margin-top: 0;
-  font-size: $type-size-4;
 
-  & + p {
+
+.archive__item-excerpt {
+  margin-top: 0;  
+  font-size: $type-size-4;
+  width: 80%;
+  margin: 10px 40px;
+  color: darkslategray;
+
+  &  p {
     text-indent: 0;
+    text-align: justify;
   }
 }
 
@@ -65,10 +71,16 @@
   border-radius: $border-radius;
   overflow: hidden;
   img {
-    width: 80% !important;
+    width: 60% !important;
     height: auto !important;
-    min-height: 80px;
+    #min-height: 80px;
+
+    @include breakpoint($small) {
+      width: 80% !important;
+    }
+
   }
+
 }
 
 .archive__item:hover {
@@ -199,12 +211,14 @@
 .feature__wrapper {
   @include clearfix();
   margin-bottom: 2em;
-  border-bottom: 1px solid $border-color;
 }
 
 .feature__item {
   margin-bottom: 2em;
+  margin-left: 10px;
   font-size: 1.25rem;
+  width: 80%;
+
 
   @include breakpoint($small) {
     float: left;

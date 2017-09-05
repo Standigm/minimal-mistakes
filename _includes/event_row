@@ -19,7 +19,7 @@
       </div>
       <div class="event__item-body">
           <h4 class="date">
-              <div><i class="fa fa-calendar-check-o" aria-hidden="true"></i></div> {{ post.event_date }}
+              <div><i class="fa fa-calendar" aria-hidden="true"></i></div> {{ post.event_date }}
           </h4>
           <h4 class="location">
               <div><i class="fa fa-map-marker" aria-hidden="true"></i></div> {{ post.event_location }}

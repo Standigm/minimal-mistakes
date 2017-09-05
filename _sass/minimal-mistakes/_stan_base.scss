@@ -195,7 +195,7 @@ figure {
   }
 
   img {
-    width: 100%;
+    width: 70%;
     border-radius: $border-radius;
     -webkit-transition: $global-transition;
     transition: $global-transition;
@@ -203,6 +203,7 @@ figure {
 
   > a {
     display: block;
+    margin-bottom: 30px;
   }
 
   &.half {

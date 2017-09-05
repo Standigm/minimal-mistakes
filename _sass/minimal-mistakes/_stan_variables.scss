@@ -61,10 +61,12 @@ $text-color                 : $dark-gray !default;
 $border-color               : $lighter-gray !default;
 
 $primary-color              : #7a8288 !default;
-$success-color              : #62c462 !default;
+//$success-color              : #62c462 !default;  
 $warning-color              : #f89406 !default;
 $danger-color               : #ee5f5b !default;
-$info-color                 : #52adc8 !default;
+//$info-color                 : #52adc8 !default; 
+$success-color              : darkcyan !default;
+$info-color                 : mediumaquamarine !default;
 
 /* brands */
 $behance-color              : #1769FF !default;

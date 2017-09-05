@@ -350,7 +350,7 @@
   margin-bottom: 2em;
   font-size: 1.25rem;
   border-radius: 10px;
-  background-color: rgb(206,219,175);
+  background-color: lightgoldenrodyellow; //rgb(206,219,175);
   padding-top: 3px;
 
   &-excerpt {
@@ -401,9 +401,17 @@
     .event__item-excerpt {
       margin : 0 ;
       padding: 5px 10px;
-      background-color: honeydew;
+      background-color: ivory;
       font-weight: lighter;
-
+      div {
+        display:inline-block;
+        text-align: center;
+        .fa {
+          width: 20px;
+          text-aligh: center;
+          color: mediumvioletred;
+        }
+      }
     }
   }
 

@@ -19,10 +19,10 @@
       </div>
       <div class="event__item-body">
           <h4 class="date">
-              <i class="fa fa-calendar-check-o" aria-hidden="true"></i> {{ post.event_date }}
+              <div><i class="fa fa-calendar-check-o" aria-hidden="true"></i></div> {{ post.event_date }}
           </h4>
           <h4 class="location">
-              <i class="fa fa-map-marker" aria-hidden="true"></i> {{ post.event_location }}
+              <div><i class="fa fa-map-marker" aria-hidden="true"></i></div> {{ post.event_location }}
           </h4>
           <div class="event__item-excerpt">
               {{ post.excerpt }}

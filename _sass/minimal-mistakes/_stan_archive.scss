@@ -341,31 +341,25 @@
   @include clearfix();
   margin-bottom: 2em;
   border-bottom: 1px solid $border-color;
-  width: 80% !important;
 }
 
 .event__item {
 
   margin-bottom: 2em;
   font-size: 1.25rem;
-  border-radius: 10px;
-  background-color: lightgoldenrodyellow; //rgb(206,219,175);
   padding-top: 3px;
 
   &-excerpt {
     font-size: 1.5rem;
-    text-align: justify;
   }
 
   &-teaser {
-    background-color: white;
     align-items: center;
     display: flex;
-    border-radius: 10px;
     margin: 10px 10px 0px 10px;
-    height: 130px;
+    min-height: 129px;
     overflow: hidden;
-
+    justify-content: space-around;
   }
 
   @for $i from 1 through 4 {
@@ -394,28 +388,35 @@
 
   &-body {
     padding: 10px;
+    border-top: 2px solid darkgrey;
+
+    .date,
+    .location {
+      font-family: $roboto
+    }
 
     .date, 
     .location, 
     .event__item-excerpt {
       margin : 0 ;
-      padding: 5px 10px;
-      background-color: ivory;
+      padding: 0 5px 3px 5px;
+      font-size: 18px;
       font-weight: lighter;
-      div {
+
+      .icon_container {
         display:inline-block;
         text-align: center;
+
         .fa {
           width: 20px;
-          text-aligh: center;
-          color: mediumvioletred;
+          color: darkseagreen; //darkslategray; 
         }
       }
     }
-  }
 
-  @include breakpoint($small) {
-    width: span(10 of 12);
+    p {
+      margin: 5px 0 0 0;
+    }
   }
 
   @include breakpoint($medium) {
@@ -426,25 +427,25 @@
     &:nth-child(4n+2) {
       clear: both;
       margin-left: 0;
-      #background-color: nth($event_color_list, 1);
+      //background-color: nth($event_color_list, 1);
     }
 
     &:nth-child(4n+3) {
       clear: none;
       margin-left: gutter(of 12);
-      #background-color: nth($event_color_list, 2);
+      //background-color: nth($event_color_list, 2);
     }
 
     &:nth-child(4n+4) {
       clear: none;
       margin-left: gutter(of 12);
-      #background-color: nth($event_color_list, 3);
+      //background-color: nth($event_color_list, 3);
     }
 
     &:nth-child(4n+1) {
       clear: none;
       margin-left: gutter(of 12);
-      #background-color: nth($event_color_list, 4);
+      //background-color: nth($event_color_list, 4);
     }
 
 

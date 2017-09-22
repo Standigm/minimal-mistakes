@@ -1,5 +1,5 @@
 ---
-title: "BIO-Europe 2017, 6-8 November"
+title: "BIO-Europe 2017"
 image_url: /assets/images/post_attach/bio_europe_logo.png
 link: https://ebdgroup.knect365.com/bioeurope/about-bio-europe
 event_date: November 6–8, 2017

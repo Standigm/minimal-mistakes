@@ -30,10 +30,39 @@ layout: default
           {% if page.read_time %}
             <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
           {% endif %}
+
+          <p class="page__date">
+            {% if page.date %}
+              <strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+            {% endif %}          
+            {% if page.source_link %}
+              {{ page.source_link | markdownify | remove: "<p>" | remove: "</p>" }} 
+            {% endif %}
+          </p>
         </header>
       {% endunless %}
 
       <section class="page__content" itemprop="text">
+
+        {% if page.categories contains "Event" %}
+          {% if page.image_url %}
+            <div class="archive__item-teaser">
+              <img src="{{ page.image_url }}">
+            </div>
+          {% endif %}
+          <p>
+          {% if page.event_date %}
+              Date : {{ page.event_date | markdownify | strip_html }}<br/>
+          {% endif %}
+          {% if page.event_location %}
+              Location : {{ page.event_location | markdownify | strip_html }}<br/>
+          {% endif %}
+          {% if page.excerpt %}
+              {{ page.excerpt | markdownify | strip_html }}
+          {% endif %}
+          </p>
+        {% endif %}
+
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>

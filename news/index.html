@@ -11,7 +11,11 @@ header:
 ---
 
 {% for post in paginator.posts %}
-  {% include stan_archive-single.html %}
+    {% if post.categories contains "Event" %}
+        {% include stan_archive-single-event.html %}
+    {% else %}
+        {% include stan_archive-single.html %}
+    {% endif %}
 {% endfor %}
 
 {% include paginator.html %}

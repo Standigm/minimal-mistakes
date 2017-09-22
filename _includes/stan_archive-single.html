@@ -15,11 +15,8 @@
     <h3 class="archive__item-title" itemprop="headline">
       <span class="archive__item-category">
         {% if post.categories contains "News" %}
-          <i class="fa fa-newspaper-o" aria-hidden="true" alt="News"></i>
-        {% else %}
-          <i class="fa fa-users" aria-hidden="true" alt="Event"></i>
+          News
         {% endif %}
-        
       </span>
       {% if post.link %}
         <a href="{{ post.link }}">{{ title }}</a> 
@@ -28,10 +25,10 @@
         <a href="{{ post.url | absolute_url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h3>
-    <p class="page__meta"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> 
-      {{ post.date | date_to_long_string }} 
+    <p class="page__meta">
+      {{ post.date | date_to_long_string | date: "%B %d, %Y" }} 
       {% if post.source_link %}
-        {{ post.source_link | markdownify | remove: "<p>" | remove: "</p>" }} 
+        by {{ post.source_link | markdownify | remove: "<p>" | remove: "</p>" }} 
       {% endif %}
     </p>
     {% if post.image_url %}

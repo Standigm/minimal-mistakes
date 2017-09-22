@@ -1,0 +1,49 @@
+{% if post.image_url %}
+  {% capture teaser %}{{ post.image_url }}{% endcapture %}
+{% endif %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+{% assign category = post.categories %}
+
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+
+    <h3 class="archive__item-title" itemprop="headline">
+      <span class="archive__item-category">
+          Event
+      </span>
+      <a href="{{ post.url | absolute_url }}" rel="permalink">{{ title }}</a>
+    </h3>
+    <p class="page__meta">
+      {{ post.date | date_to_long_string | date: "%B %d, %Y" }} 
+      {% if post.source_link %}
+        {{ post.source_link | markdownify | remove: "<p>" | remove: "</p>" }} 
+      {% endif %}
+    </p>
+    <div class="archive__item-excerpt" itemprop="description">
+      {% if post.image_url %}
+        <div class="archive__item-thumb">
+          <img src="{{ post.image_url }}">
+        </div>
+      {% endif %}
+      {% if post.event_date %}
+        <div>
+          Date : {{ post.event_date | markdownify | strip_html }}
+        </div>
+      {% endif %}
+      {% if post.event_location %}
+        <div>
+          Location : {{ post.event_location | markdownify | strip_html }}
+        </div>
+      {% endif %}
+      {% if post.excerpt %}
+          {{ post.excerpt | markdownify | strip_html }}
+      {% endif %}
+
+    </div>
+  </article>
+</div>

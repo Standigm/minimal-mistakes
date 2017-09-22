@@ -1,7 +1,5 @@
-{% if post.header.teaser %}
-  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
-{% else %}
-  {% assign teaser = site.teaser %}
+{% if post.image_url %}
+  {% capture teaser %}{{ post.image_url }}{% endcapture %}
 {% endif %}
 
 {% if post.id %}
@@ -13,25 +11,16 @@
 
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    {% if include.type == "grid" and teaser %}
-      <div class="archive__item-teaser">
-        <img src=
-          {% if teaser contains "://" %}
-            "{{ teaser }}"
-          {% else %}
-            "{{ teaser | absolute_url }}"
-          {% endif %}
-          alt="">
-      </div>
-    {% endif %}
+
     <h3 class="archive__item-title" itemprop="headline">
-
-      {% if post.categories contains "News" %}
-        <a href="{{ post.url | absolute_url }}" class="btn btn--info btn--small">{{ category }}</a>
-      {% elsif post.categories contains "Event" %}
-        <a href="{{ post.url | absolute_url }}" class="btn btn--success btn--small">{{ category }}</a>
-      {% endif %}
-
+      <span class="archive__item-category">
+        {% if post.categories contains "News" %}
+          <i class="fa fa-newspaper-o" aria-hidden="true" alt="News"></i>
+        {% else %}
+          <i class="fa fa-users" aria-hidden="true" alt="Event"></i>
+        {% endif %}
+        
+      </span>
       {% if post.link %}
         <a href="{{ post.link }}">{{ title }}</a> 
         <a href="{{ post.url | absolute_url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
@@ -39,12 +28,17 @@
         <a href="{{ post.url | absolute_url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h3>
-    <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+    <p class="page__meta"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> 
       {{ post.date | date_to_long_string }} 
       {% if post.source_link %}
         {{ post.source_link | markdownify | remove: "<p>" | remove: "</p>" }} 
       {% endif %}
     </p>
-    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 600 }}</p>{% endif %}
+    {% if post.image_url %}
+      <div class="archive__item-thumb">
+        <img src="{{ post.image_url }}" alt="">
+      </div>
+    {% endif %}
+    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html s }}</p>{% endif %}
   </article>
 </div>

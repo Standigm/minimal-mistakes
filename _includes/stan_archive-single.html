@@ -33,11 +33,16 @@
         by {{ post.source_link | markdownify | remove: "<p>" | remove: "</p>" }} 
       {% endif %}
     </p>
-    {% if post.image_url %}
-      <div class="archive__item-thumb">
-        <img src="{{ post.image_url }}" alt="">
-      </div>
+
+    {% if post.excerpt %}
+    <div class="archive__item-excerpt" itemprop="description">
+      {% if post.image_url %}
+        <div class="archive__item-thumb">
+          <img src="{{ post.image_url }}"/>
+        </div>
+      {% endif %}
+      {{ post.excerpt | markdownify | strip_html }}
+    </div>
     {% endif %}
-    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html s }}</p>{% endif %}
   </article>
 </div>

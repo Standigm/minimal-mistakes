@@ -22,8 +22,8 @@
   }
 
   &__item {
-    border-bottom: 1px solid $light-gray;
     clear: both;
+    border-bottom: 1px solid darkgray;
     .page__meta {
       font-size: $type-size-5;
       text-align: left;
@@ -109,7 +109,7 @@
 
   &  p {
     text-indent: 0;
-    text-align: justify;
+    text-align: left;
   }
 
   & .fa {
@@ -245,14 +245,21 @@
 .feature__wrapper {
   @include clearfix();
   margin-bottom: 2em;
-  margin-left: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  .archive__item {
+    border: none;
+  }
 }
 
 .feature__item {
   margin-bottom: 1.3em !important;
   font-size: 1.25rem;
-  margin-left: 30px;
-
+  padding-left: 30px;
+  border-bottom: 1px solid darkgray;
+  @include breakpoint($small) {
+    border-bottom: none;
+  }
 
   @include breakpoint($small) {
     float: left;

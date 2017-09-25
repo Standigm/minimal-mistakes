@@ -14,8 +14,10 @@
 
     <h3 class="archive__item-title" itemprop="headline">
       <span class="archive__item-category">
-        {% if post.categories contains "News" %}
-          News
+        {% if post.categories contains "Event" %}
+          Upcomming Event
+        {% else %}
+          {{ post.categories }}
         {% endif %}
       </span>
       {% if post.link %}

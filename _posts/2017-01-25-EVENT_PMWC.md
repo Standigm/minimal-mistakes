@@ -1,7 +1,7 @@
 ---
 title: "Precision Medicine World Conference (PMWC) Silicon Valley"
 image_url: /assets/images/post_attach/pmwc.png
-link_url: "http://www.pmwcintl.com/2017sv/program"
+link: "http://www.pmwcintl.com/2017sv/program"
 event_date:  January 23-25, 2017
 event_location: Silicon Valley, CA, USA
 excerpt: Jinhan Kim, Standigm CEO, spoke about StandigmAI, the drug repositioning solution, in the Precision Medicine World Conference (PMWC) Silicon Valley.

@@ -1,5 +1,5 @@
 ---
-title: "CrystalGenomics, a partner biopharmaceutical company of Standigm, found an AI-predicted drug has efficacy for cancer."
+title: "CrystalGenomics, a partner biopharmaceutical company of Standigm, finds first evidence to a new AI-driven drug for cancer."
 date: August 29, 2017
 categories:
   - News

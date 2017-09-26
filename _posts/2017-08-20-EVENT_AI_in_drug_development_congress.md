@@ -10,5 +10,5 @@ categories:
   - Event
 ---
 
-[View Agenda](https://www.artificialintelligence-congress.com/who-is-speaking/2016-speaker-line-up/)
+[Read agenda](https://www.artificialintelligence-congress.com/who-is-speaking/2016-speaker-line-up/)
 

@@ -10,10 +10,10 @@ categories:
 ---
 
 
-[Agenda](http://www.pmwcintl.com/2017sv/program/)
+[Read agenda](http://www.pmwcintl.com/2017sv/program/)
 
-* Read more in Korean Press
-  * [BioSpectator](http://www.biospectator.com/view/news_view.php?varAtcId=2628)
-  * [econovill](http://www.econovill.com/news/articleView.html?idxno=307764)
+#### Read more in Korean press
+
+[BioSpectator](http://www.biospectator.com/view/news_view.php?varAtcId=2628),[econovill](http://www.econovill.com/news/articleView.html?idxno=307764)
 
 

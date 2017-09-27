@@ -402,6 +402,10 @@
     min-height: 129px;
     overflow: hidden;
     justify-content: space-around;
+
+    a img {
+      max-height: 129px;
+    }
   }
 
   @for $i from 1 through 4 {

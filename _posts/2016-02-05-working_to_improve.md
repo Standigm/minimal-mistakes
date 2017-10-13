@@ -1,7 +1,6 @@
 ---
 title: "Working to improve drug discovery process, Standigm attracts 300 million won from investors"
 date: February 05, 2016
-link: "http://www.techforkorea.com/2016/02/05/working-to-improve-drug-discovery-process-standigm-attracts-300-million-won-from-investors/"
 categories:
   - Press
 ---

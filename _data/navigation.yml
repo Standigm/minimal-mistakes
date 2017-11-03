@@ -4,6 +4,8 @@ main:
     url: /
   - title: "PROJECT"
     url: /project/
+  - title: "SERVICE"
+    url: /service/  
   - title: "TEAM"
     url: /team/
   - title: "PARTNERSHIP"

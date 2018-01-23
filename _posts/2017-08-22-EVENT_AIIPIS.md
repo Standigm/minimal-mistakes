@@ -1,6 +1,6 @@
 ---
 title: "Artificial Intelligence in Pharma Industry Summit 2018"
-date: September 22, 2017
+date: 2018-01-23
 image_url: https://curtiswyss.com/images/events/ai-healthcare.png
 link: https://www.asdevents.com/event.asp?id=17278
 event_date: February 19-20, 2018

@@ -7,6 +7,16 @@ header:
   overlay_image: /assets/images/banner.jpg
   overlay_filter: rgba(100, 0, 50, 0.5)
   overlay_filter_to: rgba(255, 255, 255, 0.5)
+gallery:
+  - url: http://www.kcubeventures.co.kr/en/
+    image_path: /assets/images/partnership/kakaoventures_logo.JPG
+    alt: "Kakao Ventures"
+  - url: http://lbinvestment.com/english/
+    image_path: /assets/images/partnership/lbinvest_logo.png
+    alt: "LB Investment"
+  - url: http://www.atinuminvest.co.kr
+    image_path: /assets/images/partnership/atinum_logo.png
+    alt: "Atinum Invest"
 feature_row:
   - image_path: /assets/images/partnership/taiho_logo.png
     alt: "TAIHO Logo"
@@ -64,16 +74,6 @@ feature_row:
     url: "http://www.apgroup.com/int/en"
     btn_label: "Read More"
     btn_class: "btn--inverse"
-gallery:
-  - url: http://www.kcubeventures.co.kr/en/
-    image_path: /assets/images/partnership/kakaoventures_logo.JPG
-    alt: "Kakao Ventures"
-  - url: http://lbinvestment.com/english/
-    image_path: /assets/images/partnership/lbinvest_logo.png
-    alt: "LB Investment"
-  - url: http://www.atinuminvest.co.kr
-    image_path: /assets/images/partnership/atinum_logo.png
-    alt: "Atinum Invest"
 ---
 
 {% include stan_page__hero.html %}
@@ -81,10 +81,10 @@ gallery:
 <!-- Partnership-->
 <div class="box" id="partnership">
 
-    <div class="sub-title">Investors</div>    
-    {% include gallery %}
-
     <div class="sub-title">Collaborators</div>
     {% include stan_collaborator_row %}
+
+    <div class="sub-title">Investors</div>
+    {% include gallery %}
 
 </div>

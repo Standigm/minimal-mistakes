@@ -15,7 +15,7 @@
 
   <div class="event__item">
       <div class="event__item-teaser">
-        <a href="{{ link_url }}">
+        <a href="{{ link }}">
           {% if post.image_url %}
             <img src="{{ post.image_url | absolute_url }}">
           {% else %}

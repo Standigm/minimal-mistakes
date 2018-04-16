@@ -182,9 +182,9 @@ figure {
   display: -webkit-box;
   display: flex !important;
   -webkit-box-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   -webkit-box-align: start;
-          align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
   margin: 2em 2em 5em 2em !important;
 

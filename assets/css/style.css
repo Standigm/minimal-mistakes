@@ -109,6 +109,8 @@ html, body{
 	#project .row > div{
 		position: relative;
 		margin-bottom: 15px;
+		float: none;
+		margin: 0 auto;
 	}
 	#project .row  .bg_div{
 		position: absolute;

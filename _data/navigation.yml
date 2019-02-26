@@ -2,8 +2,6 @@
 main:
   - title: "HOME"
     url: /
-  - title: "PROJECT"
-    url: /project/
   - title: "SERVICE"
     url: /service/  
   - title: "TEAM"

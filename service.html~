@@ -2,7 +2,7 @@
 layout: default
 title: "Standigm"
 subtitle: "Service"
-excerpt: "Standigm provides innovative AI-driven drug discovery services, 'Standigm BEST(R)' and 'Standigm Insight(R)."
+excerpt: "Standigm provides an innovative AI-driven drug discovery services, 'Standigm BEST(R)' and 'Standigm Insight(R)."
 header:
   overlay_image: /assets/images/banner.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)

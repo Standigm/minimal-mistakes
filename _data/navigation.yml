@@ -2,8 +2,8 @@
 main:
   - title: "HOME"
     url: /
-  - title: "SERVICE"
-    url: /service/  
+  - title: "TECHNOLOGY"
+    url: /technology/
   - title: "TEAM"
     url: /team/
   - title: "PARTNERSHIP"

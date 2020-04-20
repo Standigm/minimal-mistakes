@@ -340,3 +340,12 @@ html, body{
 	padding-right: 3px;
 }
 
+.pdf-icon{
+  display: inline-block;
+  height: 52px;
+  width: 52px;
+}
+
+.inline-block{
+  display: inline-block;
+}

@@ -7,16 +7,5 @@
 {% assign posts = site.posts | where: "categories", "News" %}
 
 {% for post in posts limit:4 %}
-  <div class="event__item">
-      <div class="event__item-teaser">
-        <a href="{{ link }}">
-          <h3 class="event__item-title">
-            <a href-="{{ post.url }}">
-              {{ post.title }}
-            </a>
-          </h3>
-        </a>
-      </div>
-  </div>
-
+  {% include stan_archive-single-main.html %}
 {% endfor %}

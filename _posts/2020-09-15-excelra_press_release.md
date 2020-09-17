@@ -1,6 +1,6 @@
 ---
 title: "Standigm Collaborates with Excelra to enhance its AI-driven Drug Discovery Process"
-date: April 22, 2020
+date: September 15, 2020
 categories:
   - News
 tags:

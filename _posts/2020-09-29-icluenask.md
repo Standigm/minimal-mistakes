@@ -1,6 +1,6 @@
 ---
 title: "Standigm and SK holdings C&C Release an AI-Based Target Identification Platform, iCLUE&ASK™, to Accelerate Drug Discovery Process"
-date: September 15, 2020
+date: September 29, 2020
 categories:
   - News
 tags:

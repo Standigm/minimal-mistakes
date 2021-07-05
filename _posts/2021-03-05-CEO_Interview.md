@@ -11,8 +11,6 @@ tags:
   - Scrip
 ---
 
-**Executive Summary**
-
 The South Korean AI-driven drug discovery venture is vying with global rivals in the space to show concrete validation of its approaches in partnered projects, while eyeing international expansion and new fundraising, its CEO says.
 
 **AI Source: ShutterstockPURSUING DISCOVERY OF FIRST-IN-CLASS, NOVEL MOLECULES**

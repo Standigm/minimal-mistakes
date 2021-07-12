@@ -20,7 +20,7 @@ Under the contract, SK Chemicals will collaborate with Standigm on the clinical 
 
 "We are pleased that Standigm’s AI-driven drug candidate has found an experienced partner to bring it to successful clinical development," said Jinhan Kim, co-founder and CEO of Standigm, adding, "This partnership will help us to commercialize our AI-driven drug candidates and enhance our ability and expertise in drug development.”
 
-"Since 2019, we have had open innovation collaboration with Standigm, through which we have already experienced Standigm’s advanced technology. Our co-development effort resulted in patent filing of a (repurposed FDA-approved drug for rheumatoid arthritis (RA) last January)[https://www.standigm.com/news/radr_sk/]”, said Jeonghoon Kim, head of SK Chemicals research center, adding, “This positive experience convinced us that we could create greater synergy by making strategic investment into Standigm.”
+"Since 2019, we have had open innovation collaboration with Standigm, through which we have already experienced Standigm’s advanced technology. Our co-development effort resulted in patent filing of a [repurposed FDA-approved drug for rheumatoid arthritis (RA) last January](https://www.standigm.com/news/radr_sk/)”, said Jeonghoon Kim, head of SK Chemicals research center, adding, “This positive experience convinced us that we could create greater synergy by making strategic investment into Standigm.”
 
 **About NASH**
 
